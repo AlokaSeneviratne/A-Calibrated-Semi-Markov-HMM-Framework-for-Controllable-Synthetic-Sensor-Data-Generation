@@ -1,7 +1,7 @@
 # A Calibrated Semi-Markov HMM Framework for Controllable Synthetic Sensor Data Generation
 
 Master's thesis, University of Oulu, Electronics and Communications Engineering.
-Author: Praveen Aloka Seneviratne. Supervisor: Prof. Sumudu Samarakoon. Second examiner: Dr. Chathuranga Weeraddana.
+Author: Praveen Aloka Seneviratne.
 
 ## Overview
 
