@@ -1,0 +1,2 @@
+# A-Calibrated-Semi-Markov-HMM-Framework-for-Controllable-Synthetic-Sensor-Data-Generation
+A calibrated semi-Markov HMM framework for generating controllable synthetic time-series sensor data from any compatible dataset, giving researchers unlimited labelled training examples with tunable parameters. Freezing of Gait detection on FoG-STAR serves as proof of concept, with statistical, sensitivity, and downstream classifier validation.
