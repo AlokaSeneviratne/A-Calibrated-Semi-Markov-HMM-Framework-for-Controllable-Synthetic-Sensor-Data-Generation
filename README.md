@@ -63,6 +63,9 @@ Synthetic dwell-time means track the real means closely. The largest relative er
 | Trembling | 6.34  | 5.99  | 0.083 | -5.5%  |
 | Akinesia  | 20.36 | 18.55 | 0.097 | -8.9%  |
 
+<img width="1525" height="1099" alt="fig_6_2_dwell_distributions" src="https://github.com/user-attachments/assets/bda28e39-47ea-4781-8f32-956b80818da7" />
+
+
 ### AR(1) recovery
 
 The empirical AR(1) coefficient measured back from synthetic ankle-FI traces matches the fitted target to within about 0.02 in every state.
@@ -81,6 +84,8 @@ The point of the framework is that target parameters move the synthetic output p
 - Akinesia dwell target swept 5 to 80 s raises the realised FoG fraction from 0.135 to 0.424, with ankle-FI KS holding near 0.16 to 0.18.
 - FoG burden target swept 5% to 50% gives realised FoG fractions of 0.065 to 0.503, again with stable KS.
 - Shuffling AR(1) coefficient has little effect on FoG fraction, as expected, and only the extreme 0.99 setting noticeably perturbs ankle-FI KS.
+  
+<img width="703" height="375" alt="app_interface" src="https://github.com/user-attachments/assets/df994616-710d-455a-a61c-a0ecc21b5e6d" />
 
 ### Downstream machine learning
 
@@ -92,6 +97,7 @@ A random forest trained only on 100 synthetic episodes and tested on real FoG-ST
 | Synthetic transfer      | 0.346 | 0.357 | 0.093 |
 
 The binary F1 more than doubles under synthetic training. The macro 4-class figure for the baseline is inflated by trivial all-Healthy folds and is not the meaningful comparison; binary F1 is. Minority-state recall, Shuffling in particular, remains the principal weakness of both settings. A burden sweep confirms the mechanism: raising the synthetic FoG burden from 10% to 40% lifts mean binary F1 from 0.318 to 0.364 and Shuffling recall from 0.027 to 0.120.
+<img width="1785" height="586" alt="fig_8_ml_baseline_vs_synth" src="https://github.com/user-attachments/assets/046975bb-09ea-4a56-be80-c91f279f99c2" />
 
 ## Limitations
 
